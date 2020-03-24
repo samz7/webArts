@@ -1,10 +1,12 @@
 
 
-let W = 2000;
-let H = 2000;
+let W = 800;
+let H = 600;
 let plaza;
+let cnv
 function setup(){
-    createCanvas(W, H);
+    cnv = createCanvas(W, H);
+    cnv.center();
     plaza =  new Plaza(200, 2, W, H);
     frameRate(20)
 }
